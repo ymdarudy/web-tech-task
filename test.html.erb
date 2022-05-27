@@ -11,7 +11,7 @@
     <% connection.internal_encoding = "UTF-8" %>
 
     <form action="indicate.cgi" method="POST">
-       下記に文字を入力してください<br><br>
+        下記に文字を入力してください<br><br>
       <input type="text"  name="input" ><br>
       <input type="submit" name="送信" >
     </form>
@@ -24,9 +24,9 @@
     <% end %>
 
     <form action="goya.cgi" method="POST">
-       下記のボタンを押すと、ゴーヤの大きさと売った相手の情報ページに飛びます<br><br>
-       <!-- valueには、送りたいデータを代入する -->
-       <!-- name="goya"を、情報の目印とする -->
+        下記のボタンを押すと、ゴーヤの大きさと売った相手の情報ページに飛びます<br><br>
+        <!-- valueには、送りたいデータを代入する -->
+        <!-- name="goya"を、情報の目印とする -->
       <input type="text" name="goya" value="<%= data.join(" ") %>">
       <input type="submit" name="送信" >
     </form>
